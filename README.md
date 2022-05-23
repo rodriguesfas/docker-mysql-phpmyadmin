@@ -1,12 +1,14 @@
 # Docker MySQL PHPMyAdmin
 
-# Run MySQL container
+# Run
 
-    docker-compose up db
+    docker compose up -d
 
-# Run PHPMyAdmin container
+# Login
 
-    docker-compose up app
+    db
+    root
+    password
 
 # References
 

@@ -1,4 +1,3 @@
-
 version: '3.3'
 volumes:
   data:
@@ -10,8 +9,8 @@ services:
     volumes:
       - data:/var/lib/mysql
     environment:
-      - MYSQL_ROOT_PASSWORD=password
-      - MYSQL_DATABASE=app_development
+      - MYSQL_ROOT_PASSWORD=${MYSQL_ROOT_PASSWORD}
+      - MYSQL_DATABASE=${MYSQL_DATABASE}
   app:
     image: phpmyadmin/phpmyadmin:latest
     links:
